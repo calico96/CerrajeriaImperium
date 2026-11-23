@@ -1,0 +1,34 @@
+:root{--dorado:#FFD700;--dorado-claro:#FFE87A;--negro:#06070B}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--negro);font-family:Montserrat;color:#fff;overflow-x:hidden}
+.bg-glow{position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 15% 30%, rgba(255,215,0,0.18) 0%, transparent 40%),radial-gradient(circle at 85% 70%, rgba(212,175,55,0.12) 0%, transparent 40%),#06070B}
+.header{width:92%;max-width:1250px;margin:18px auto 0;display:flex;justify-content:space-between;align-items:center;padding:10px 18px;background:linear-gradient(180deg,rgba(25,25,25,0.9),rgba(10,10,10,0.9));border:1px solid rgba(255,215,0,0.25);border-radius:14px;box-shadow:0 0 25px rgba(255,215,0,0.15)}
+
+/* LOGO - FUNDAMENTAL - NO SE PIXELA NUNCA */
+.logo{display:flex;align-items:center;gap:12px}
+.logo-img{width:48px;height:48px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(255,215,0,0.6));border-radius:8px}
+.logo-text b{display:block;font-family:Cinzel;line-height:0.9;font-size:0.85rem;color:#FFE87A}
+.logo-text b:last-child{color:#FFD700}
+.logo-hero{text-align:center;margin-bottom:12px}
+.logo-central{width:125px;height:125px;object-fit:contain;filter:drop-shadow(0 0 25px rgba(255,215,0,0.5));animation:brilloLogo 3s infinite}
+@keyframes brilloLogo{0%,100%{filter:drop-shadow(0 0 15px rgba(255,215,0,0.4)) brightness(1)}50%{filter:drop-shadow(0 0 30px rgba(255,215,0,0.8)) brightness(1.1)}}
+
+.nav-desktop{display:flex;gap:24px}.nav-desktop a{color:#fff;opacity:0.78;text-decoration:none;font-size:0.82rem;font-weight:700}
+.btn-header{background:linear-gradient(180deg,#FFE87A,#FFD700);color:#000;font-weight:900;font-size:0.75rem;padding:8px 14px;border-radius:100px;text-decoration:none;box-shadow:0 0 15px rgba(255,215,0,0.4)}
+.menu-mobile{display:none;background:none;border:none;color:var(--dorado);font-size:1.4rem}
+.main-container{width:92%;max-width:1250px;margin:22px auto;background:linear-gradient(180deg,rgba(18,18,18,0.85),rgba(8,8,8,0.95));border:1px solid rgba(255,215,0,0.2);border-radius:20px;padding:32px 28px 20px;box-shadow:0 0 60px rgba(0,0,0,0.8)}
+.titulo-imperium{font-family:Cinzel;text-align:center;font-size:2.4rem;font-weight:900;background:linear-gradient(180deg,#FFF8C0,#FFD700,#A07C00);-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 12px rgba(255,215,0,0.3))}
+.subtitulo{text-align:center;margin-top:6px;font-size:0.95rem;font-weight:700}
+.linea-fina{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:10px;opacity:0.6}.linea-fina span{height:1px;width:70px;background:linear-gradient(90deg,transparent,var(--dorado),transparent);display:block}.linea-fina p{font-size:0.75rem}
+.foto-card{margin:22px auto 0;max-width:760px;border-radius:18px;padding:2px;background:linear-gradient(180deg,var(--dorado-claro),#B8960C);box-shadow:0 0 35px rgba(255,215,0,0.35)}.foto-card img{width:100%;height:300px;object-fit:cover;border-radius:16px;display:block}
+.descripcion{max-width:900px;margin:28px auto 0;padding:20px 24px;background:linear-gradient(180deg,rgba(35,35,35,0.75),rgba(15,15,15,0.8));border:1px solid rgba(255,215,0,0.18);border-radius:14px;text-align:center}.descripcion h2{font-family:Cinzel,serif;color:var(--dorado-claro);font-size:1.25rem;margin-bottom:10px}.descripcion p{font-size:.88rem;line-height:1.8;opacity:.82}.galeria{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:1000px;margin:22px auto 0}.galeria .foto-card{width:100%;margin:0}.galeria .foto-card img{height:280px}
+.titulo-servicios{text-align:center;margin-top:28px;font-weight:800;font-size:1rem;color:var(--dorado-claro)}
+.grid-servicios{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.card-serv{background:linear-gradient(180deg,rgba(35,35,35,0.9),rgba(15,15,15,0.9));border:1px solid rgba(255,215,0,0.18);border-radius:14px;padding:14px 10px;text-align:center;transition:0.3s}.card-serv:hover{transform:translateY(-4px);border-color:var(--dorado)}
+.card-serv .icono{width:52px;height:52px;margin:0 auto 8px;background:radial-gradient(circle at 30% 30%, #2A2A2A, #0F0F0F);border:1px solid rgba(255,215,0,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px}
+.card-serv b{display:block;font-size:0.58rem;font-weight:800;line-height:1.2;min-height:28px}.card-serv p{font-size:0.58rem;opacity:0.55;margin-top:4px}
+.footer-call{margin-top:24px;background:linear-gradient(90deg, #1A1200, #3A2A00, #1A1200);border-top:1px solid rgba(255,215,0,0.25);border-radius:0 0 14px 14px;margin-left:-28px;margin-right:-28px;margin-bottom:-20px;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}.footer-call p{font-size:0.7rem;font-weight:800;color:var(--dorado-claro)}
+.creditos-final{text-align:center;margin-top:8px;padding:0 8px 2px;font-size:0.72rem;line-height:1.5;color:var(--dorado-claro);opacity:0.82}
+.btn-llamar{background:linear-gradient(180deg,var(--dorado-claro),var(--dorado));color:#000;font-weight:900;text-align:center;padding:8px 28px;border-radius:100px;text-decoration:none;line-height:1.1;font-size:0.75rem;box-shadow:0 0 18px rgba(255,215,0,0.4)}.direccion-final{text-align:center;margin-top:18px;font-size:0.68rem;opacity:0.5}
+.nav-mobile{display:none;position:fixed;top:70px;left:5%;right:5%;background:#111;border:1px solid var(--dorado);border-radius:14px;padding:12px;flex-direction:column;gap:10px;z-index:999}.nav-mobile a{color:#fff;text-decoration:none;font-weight:700}.nav-mobile.show{display:flex}
+@media(max-width:768px){.nav-desktop,.btn-header{display:none}.menu-mobile{display:block}.titulo-imperium{font-size:1.45rem}.main-container{padding:18px 14px 16px;width:95%}.foto-card img{height:200px}.galeria{grid-template-columns:1fr;gap:14px}.galeria .foto-card img{height:220px}.descripcion{padding:16px 14px}.descripcion p{font-size:.8rem;line-height:1.65}.grid-servicios{grid-template-columns:1fr 1fr}.logo-central{width:95px;height:95px}.logo-img{width:38px;height:38px}.footer-call{flex-direction:column;text-align:center;margin-left:-14px;margin-right:-14px}.btn-llamar{width:90%}}
